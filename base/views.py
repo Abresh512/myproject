@@ -39,7 +39,7 @@ def login_room(request):
         password = request.POST.get('password')
 
         try:
-            user = User.objects.get(username=username).capi
+            user = User.objects.get(username=username)
         except:
             print("Invalid")
 
